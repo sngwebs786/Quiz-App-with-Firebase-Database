@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive !important;
+}
+/* Main Box */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+/* DIV1 (QuizBox1) */
+
+.quizBox{
+    background: rgb(13,62,125);
+    background: radial-gradient(circle, rgba(13,62,125,1) 0%, rgba(5,8,108,1) 100%);
+    position: absolute;
+    border: 5px rgb(245, 201, 56) double;
+    width: 45vh;
+    height: 500px;
+}
+
+.heading
+{
+    color: rgb(245, 201, 56);
+    text-decoration: underline;
+    font-size: 3vh;
+    font-family: serif;
+    text-align: center;
+    position: relative;
+    margin-top: 70px !important;
+}
+
+.form
+{
+    text-align: center;
+    font-size: 2vh;
+    position: relative;
+}
+/* Start Quiz Button */
+
+.btn button{
+    /* background: none; */
+    color: #fff !important;
+    height: 38px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    margin-top: 30px;
+    border:3px solid rgb(245, 201, 56);
+    align-items: center;
+    font-family: cursive !important; 
+
+}
+.btn button:hover{
+    cursor: pointer;
+}
+
+/* Form User Input */
+
+.form input{
+    height: 30px;
+    width: 90%;
+    border: none;
+    outline: none !important;
+    font-size: 2vh;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #fff !important;
+    justify-content: space-evenly !important;
+    font-family: cursive !important; 
+
+
+}
+
+
+/* Div2(.quizBox2) */
+
+
+.quizBox2{
+    background: rgb(13,62,125);
+    background: radial-gradient(circle, rgba(13,62,125,1) 0%, rgba(5,8,108,1) 100%);
+    position: absolute;
+    border: 5px rgb(245, 201, 56) double;
+    width: 45vh;
+    height: 500px;
+}
+
+.quizQues div{
+    height: 100px;
+    border-bottom: 1px solid rgb(245, 201, 56);
+}
+
+.quizQues div p{
+font-size:15px;
+color: white;
+}
+
+.namenroll{
+    margin-left: 10px;
+    color: rgb(245, 201, 56) !important;
+}
+white{
+    color: white !important;
+}
+.timeLeft{
+    margin-left: 0px !important;
+    margin-top: -14px;
+    float: right;
+    margin-right: 15px;
+}
+.time{
+    display: inline-block;
+}
+/* Questions */
+
+.quizQues p{
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 10px;
+}
+
+/* Options */
+
+.quizQues li{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 15px;
+    font-size: 2vh;
+    cursor: pointer;
+}
+/* btnPortion */
+
+.btnPortion{
+    border-top: 1px solid rgb(245, 201, 56);
+}
+/* Next and Submit Button */
+
+.btn2 button{
+    background: none;
+    color: white !important;
+    height: 35px;
+    width: 150px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    margin-top: 35px !important;
+    border:3px solid rgb(245, 201, 56);
+    align-items: center;
+    font-family: cursive !important; 
+
+    margin: 10px;
+
+}
+.btn2 button:hover{
+    cursor: pointer;
+}
+
+
+
+/* DIV 3 (Quiz Box3) */
+.quizBox3{
+    background: rgb(13,62,125);
+    background: radial-gradient(circle, rgba(13,62,125,1) 0%, rgba(5,8,108,1) 100%);
+    position: absolute;
+    border: 5px rgb(245, 201, 56) double;
+    width: 45vh;
+    height: 500px;
+}
+.resultContent p{
+    margin-left: 20px;
+    color:white;
+}
+.totalSc{
+    text-align: center;
+    font-size: 3vh;
+    color: green;
+    margin-left: 10px;
+}
+
+
+
+
+/* DIV 4(quizbox4) */
+.quizBox4{
+    background: rgb(13,62,125);
+    background: radial-gradient(circle, rgba(13,62,125,1) 0%, rgba(5,8,108,1) 100%);
+    position: absolute;
+    border: 5px rgb(245, 201, 56) double;
+    width: 45vh;
+    height: 500px;
+}
+.quizBox4 h1{
+    margin-top: 60%;
+    color: rgb(245, 201, 56);
+}
+
+/* Quiz box 5 */
+.quizBox5{
+    background: rgb(13,62,125);
+    background: radial-gradient(circle, rgba(13,62,125,1) 0%, rgba(5,8,108,1) 100%);
+    position: absolute;
+    border: 5px rgb(245, 201, 56) double;
+    width: 45vh;
+    height: 500px;
+}
+.ins p{
+    margin-left: 20px;
+    color: white;
+    font-size: 3vh;
+}
+.back{
+    background: none;
+    color: #fff !important;
+    height: 35px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    margin-top: 30px;
+    border:3px solid rgb(245, 201, 56);
+    align-items: center;
+}
+.back:hover{
+    cursor: pointer;
+}
+
+/* Button classes */
+.lblue{
+    background-color: rgb(7, 141, 219) !important;
+}
+.lgreen{
+    background-color: rgb(56, 199, 56) !important;
+}
+
+/* JS CLASS */
+
+.hide {
+    display: none;
+}
+.block{
+    display: block;
+}
+.wrong{
+    background-color: rgb(250, 44, 44) !important;
+}
+.right{
+    background-color: rgb(22, 192, 22) !important;
+}
+.disabled{
+    pointer-events: none;
+}

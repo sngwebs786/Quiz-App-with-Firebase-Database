@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body oncontextmenu="return false">
+
+    <section class="main">
+        <div class="quizBox" id="quizBox1">
+            <div class="heading" id="heading">
+                <h1>Quiz Form</h1>
+            </div>
+            <div class="form" id="form">
+                <span>
+                    <!-- <label for="">Full Name&nbsp; </label> -->
+                    <input class="inp" type="text" name="" id="name" placeholder="Enter your full name..">
+                </span>
+                <br> <br>
+                <span>
+                    <!-- <label for="">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> -->
+                    <input class="inp" type="text" name="" id="email" placeholder="Enter your email..">
+                </span>
+                <br> <br>
+                <span>
+                    <!-- <label for="">Roll No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> -->
+                    <input class="inp" type="text" name="" id="rollno" placeholder="Enter your Roll No..">
+                </span>
+                <br> <br>
+                <span>
+                    <!-- <label for="">Section&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> -->
+                    <input class="inp" type="text" name="" id="section" placeholder="Enter your Section..">
+                </span>
+                <br> <br>
+                <span class="btn">
+                    <button class="lgreen" id="startBtn" onclick="start()">Start Quiz ?</button>
+                    <button class="lblue" id="readIns" onclick="read()">Read Instructions</button>
+                </span>
+            </div>
+        </div>
+
+      
+
+
+        <!-- Que page -->
+
+        <div class="quizBox2 hide" id="quizBox2">
+            <!-- <div class="heading" id="heading">
+                <h1>Quiz App</h1>
+            </div> -->
+            <div class="quizQues">
+                <div>
+                    <p id="dispName" class="namenroll"><white>Name: </white></p>
+                    <p id="dispRoll" class="namenroll"><white>Roll no: </white></p>
+                    <span class="timeLeft">
+                        <p class="time">Time: </p>
+                        <p class="minHeading time" id="minHeading">00</p>
+                        <p class="time">:</p>
+                        <p class="time secHeading" id="secHeading">00</p>
+                    </span>
+                </div>
+                <p id="question"></p>
+                <li class="option" onclick="select(this)"></li>
+                <li class="option" onclick="select(this)"></li>
+                <li class="option" onclick="select(this)"></li>
+                <li class="option" onclick="select(this)"></li>
+            </div>
+            <div class="btnPortion">
+                <center>
+                    <span class="btn2">
+                        <button class="hide lblue" id="nextBtn" onclick="next()">Next Qustion </button>
+                        <button class="hide lgreen" id="submitBtn" onclick="submit()">Submit Quiz</button>
+                    </span>
+                </center>
+            </div>
+        </div>
+
+        <!-- RESULT PAGE -->
+        <div class="quizBox3 hide" id="quizBox3">
+            <div class="heading" id="heading">
+                <h1>Result</h1>
+            </div>
+            <div class="resultContent">
+                <p id="nameH"></p>
+                <p id="emailH"> </p>
+                <p id="rollnoH"></p>
+                <p id="sectionH"></p>
+                <p id="allqueH"></p>
+                <p id="correctH"></p>
+                <p id="wrongH">Wrong Answers: </p>
+            </div>
+            <div>
+                <p id="totalH" class="totalSc">Your total score is: </p>
+            </div>
+        </div>
+
+        <!-- TIMES UP PAGE -->
+        <div class=" quizBox4 hide" id="quizBox4">
+            <center>
+                <h1> Oops !! Times Up..</h1>
+                <span class="btn2">
+                    <button class="" id="submitBtn2" onclick="submit2()">Submit Quiz</button>
+                </span>
+            </center>
+        </div>
+
+
+
+  <!-- Instructions page -->
+
+  <div class="quizBox5 hide" id="quizBox5">
+<div class="heading">
+    <h1>
+    Instructions
+</h1>
+</div>
+<div class="ins">
+    <p>i. You have only 60 seconds to complete this quiz.</p>
+    <p>ii. All questions carry equal marks</p>
+    <p>iii. Each question is of 10 marks</p>
+    <h2 class="totalSc">All the best !!</h2>
+    <center>
+    <button id="back" class="back lgreen" onclick="back()">Back</button>
+</center>
+</div>
+</div>
+
+    </section>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
